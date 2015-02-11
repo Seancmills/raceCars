@@ -13,11 +13,12 @@ var Car = function (n, s, t) {
     if (this.torque > (Math.random() * 1000)) {
       this.position += this.speed;
     }
-    else if (this.position == 500) {
+    if (this.position == 500) {
       alert("Looks like " + this.name + " is ahead!");
     }
-    else if (this.position == 1000) {
+    if (this.position == 1000) {
        alert( this.name + " has won the race! Refresh to see them race again!");
+       return;
     }
   };
 }
