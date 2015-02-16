@@ -1,41 +1,24 @@
-<script>
-var question = alert("Lets watch 3 cars race!");
-
-var Car = function (n, s, t) {
-  this.name = n;
-  this.speed = s;
-  this.torque = t;
-  this.position = 0;
-  this.report = function () {
-    return this.name + " has reached " + this.position;
-  };
-  this.run = function () {
-    if (this.torque > (Math.random() * 1000)) {
-      this.position += this.speed;
-    }
-    if (this.position == 500) {
-      alert("Looks like " + this.name + " is ahead!");
-    }
-    if (this.position == 1000) {
-       alert( this.name + " has won the race! Refresh to see them race again!");
-       return;
-    }
-  };
-}
-
-var nissan = new Car ("GTR", 50, 300);
-    toyota = new Car ("Supra", 200, 50);
-    subaru = new Car ("LFA", 100, 100);
-
-var distance = 1000;
-while(nissan.position < 1000 && toyota.position < 1000 && subaru.position < 1000) {
-  nissan.run();
-  toyota.run();
-  subaru.run();
-};
-
-console.log(nissan.report());
-console.log(toyota.report());
-console.log(subaru.report());
-
-</script>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Race Cars</title>
+    <link rel="stylesheet" type="text/css" href="raceCss.css">
+    <script src="raceCars.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1> Race Cars</h1>
+    </header>
+    <article>
+      <img class="img" src="https://conceptzperformance.com/Cart/images/16681l.jpg"></img>
+      <img class="img" src="http://www.ssr-wheels.com/gallery/image.axd?picture=2014%2f12%2fAJ3_4143.jpg"></img>
+      <h2>Information</h2>
+      <p>This is a simulation of 3 cars racing. Click on the "Start Race" button to see who wins.</p>
+      <section>
+        <h2>Code Explanation</h2>
+        <p>The code used in this is similar to the Turtle and Rabbit simulation except there is input from the user where they have to click a button to activate the js file. </p>
+      </section>
+    </article>
+    <button>Start Race</button>
+  </body>
+</html>
