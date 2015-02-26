@@ -1,2 +1,2 @@
 # raceCars
-In this domain there are 3 cars ready to race once the user clicks "ok" on the alert.  Once that is done the code then loops through and once a car hits a certain point in the race a prompt is shown saying that the car is ahead.  When a car hits the last point in the race another prompt is then shown saying the specific car has won.
+In this domain there are 3 car ready to race.  As soon as the user clicks on the "Start Race" button a jquery event will happen and an alert will pop up asking if the user wants to see a race.  This domain also contains more jQuery with the another button that shows the speed and torque of each car.
