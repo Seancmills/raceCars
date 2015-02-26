@@ -1,1 +1,2 @@
 # raceCars
+In this domain there are 3 car ready to race.  As soon as the user clicks on the "Start Race" button a jquery event will happen and an alert will pop up asking if the user wants to see a race.  This domain also contains more jQuery with the another button that shows the speed and torque of each car.
